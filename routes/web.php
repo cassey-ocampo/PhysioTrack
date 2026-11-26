@@ -14,3 +14,5 @@ Route::view('/goals', 'goals')->name('goals');
 Route::view('/sensors', 'sensors')->name('sensors');
 
 Route::view('/help', 'help')->name('help');
+
+Route::view('/', 'login')->name('login.page');

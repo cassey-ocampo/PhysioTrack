@@ -1,0 +1,541 @@
+
+/* =========================================
+   PHYSIOTRACK - GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f7f6;
+    color: #18383c;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
+.navbar {
+    height: 40px;
+    background-color: #103438;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8.1%;
+    color: #ffffff;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.brand-logo {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #b6d6cf;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.brand-name h2 {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #ffffff;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 6px;
+    letter-spacing: 0.7px;
+    color: #b7c9c8;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 7px;
+    font-weight: 400;
+}
+
+.nav-links a:hover {
+    color: #8ed2c4;
+}
+
+
+/* =========================================
+   LOGIN SECTION
+========================================= */
+
+.login-section {
+    height: 345px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 12px;
+
+    background-color: #f3f7f6;
+}
+
+.login-card {
+    width: 230px;
+    min-height: 303px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e9e7;
+    border-radius: 10px;
+
+    padding: 20px 19px;
+
+    box-shadow: 0 3px 12px rgba(20, 55, 55, 0.035);
+}
+
+
+/* Login Heading */
+
+.login-heading {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-heading h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #18383c;
+    margin-bottom: 5px;
+}
+
+.login-heading p {
+    font-size: 7px;
+    color: #82989a;
+    white-space: nowrap;
+}
+
+
+/* Form Groups */
+
+.form-group {
+    margin-bottom: 11px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 7px;
+    font-weight: 600;
+    color: #29484a;
+    margin-bottom: 5px;
+}
+
+.input-wrapper {
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #e1eae8;
+    border-radius: 7px;
+
+    background-color: #f7faf9;
+
+    padding: 0 8px;
+}
+
+.input-wrapper:focus-within {
+    border-color: #299687;
+}
+
+.input-icon {
+    font-size: 10px;
+    color: #8ca3a4;
+    margin-right: 7px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 7px;
+    color: #29484a;
+}
+
+.input-wrapper input::placeholder {
+    color: #9aabad;
+}
+
+.password-toggle {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 10px;
+    color: #81999a;
+}
+
+
+/* Remember Me and Forgot Password */
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-size: 7px;
+    color: #758c8d;
+}
+
+.remember-me input {
+    width: 9px;
+    height: 9px;
+    accent-color: #278f80;
+}
+
+.forgot-password {
+    font-size: 7px;
+    color: #218c7d;
+    text-decoration: none;
+}
+
+
+/* Sign In Button */
+
+.signin-button {
+    width: 100%;
+    height: 23px;
+
+    background-color: #278f80;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: #207c70;
+}
+
+
+/* Divider */
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 13px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #e8eeed;
+}
+
+.divider p {
+    font-size: 7px;
+    color: #a0b0b0;
+}
+
+
+/* Microsoft Button */
+
+.microsoft-button {
+    width: 100%;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border: 1px solid #e3ebea;
+    border-radius: 7px;
+
+    background-color: #ffffff;
+
+    color: #294447;
+    font-size: 7px;
+
+    cursor: pointer;
+}
+
+.microsoft-button:hover {
+    background-color: #f7faf9;
+}
+
+
+/* Microsoft Logo */
+
+.microsoft-logo {
+    width: 9px;
+    height: 9px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+
+.microsoft-logo i:nth-child(1) {
+    background-color: #f25022;
+}
+
+.microsoft-logo i:nth-child(2) {
+    background-color: #7fba00;
+}
+
+.microsoft-logo i:nth-child(3) {
+    background-color: #00a4ef;
+}
+
+.microsoft-logo i:nth-child(4) {
+    background-color: #ffb900;
+}
+
+
+/* Register Link */
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    margin-top: 14px;
+
+    font-size: 7px;
+}
+
+.register-link span {
+    color: #809596;
+}
+
+.register-link a {
+    color: #208c7d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    min-height: 289px;
+
+    background-color: #f6faf9;
+
+    border-top: 1px solid #e7eeec;
+
+    padding: 24px 7.7% 30px;
+}
+
+.about-section > h2 {
+    text-align: center;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: #193a3e;
+
+    margin-bottom: 33px;
+}
+
+
+/* About Cards Container */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+
+/* Individual Cards */
+
+.about-card {
+    min-height: 158px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2eae8;
+    border-radius: 10px;
+
+    padding: 15px 15px;
+
+    box-shadow: 0 3px 10px rgba(20, 55, 55, 0.035);
+}
+
+
+/* About Icons */
+
+.about-icon {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #e0f2ed;
+
+    border-radius: 5px;
+
+    color: #278f80;
+    font-size: 12px;
+
+    margin-bottom: 9px;
+}
+
+
+/* About Card Text */
+
+.about-card h3 {
+    font-size: 10px;
+    font-weight: 700;
+
+    color: #193a3e;
+
+    margin-bottom: 9px;
+}
+
+.about-card p {
+    font-size: 7px;
+    line-height: 1.55;
+
+    color: #71898b;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    min-height: 51px;
+
+    border-top: 1px solid #e7eeec;
+
+    background-color: #f3f7f6;
+
+    padding: 0 7.7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 7px;
+    color: #91a5a5;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    font-size: 7px;
+    color: #71898b;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #218c7d;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        gap: 9px;
+    }
+
+    .nav-links a {
+        font-size: 6px;
+    }
+
+    .login-section {
+        height: 345px;
+    }
+
+    .about-section {
+        padding: 24px 20px 30px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .about-card {
+        min-height: auto;
+    }
+
+    .about-card p {
+        font-size: 9px;
+    }
+
+    .footer {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
