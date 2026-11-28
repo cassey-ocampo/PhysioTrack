@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
 
     <title>@yield('title', 'PhysioTrack')</title>
 
-    @vite(['resources/css/app.css'])
+    <link rel="stylesheet" href="/physiotrack.css?v={{ filemtime(public_path('physiotrack.css')) }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

@@ -16,3 +16,7 @@ Route::view('/sensors', 'sensors')->name('sensors');
 Route::view('/help', 'help')->name('help');
 
 Route::view('/', 'login')->name('login.page');
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
